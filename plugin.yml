@@ -1,0 +1,19 @@
+name: OpsyDistance
+version: 1.0
+author: ZeTioZ
+main: fr.opsycraft.opsydistance.Main
+commands:
+  pvpdistance:
+    aliases: [pvpd, opsydistance, odistance, opsyd]
+    description: Main opsydistance command
+  pvpdistance enable:
+    description: Enable the hit checker distance
+    permission: pvpdistance.use
+  pvpdistance disable:
+    description: Disable the hit checker distance
+    permission: pvpdistance.use
+  pvpdistance help:
+    description: Show the help page of the plugin
+  pvpdistance reload:
+    description: Reload the plugin
+    permission: pvpdistance.reload
