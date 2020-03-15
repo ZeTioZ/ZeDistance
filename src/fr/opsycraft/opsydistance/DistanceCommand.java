@@ -33,7 +33,7 @@ public class DistanceCommand implements CommandExecutor, Listener {
 		this.filesManager = main.getFilesManger();
 		this.messagesFile = this.filesManager.getMessagesFile();
 		this.configsFile = this.filesManager.getConfigsFile();
-		this.prefix = messagesFile.getString("prefix").replace("&", "§");
+		this.prefix = ChatColor.translateAlternateColorCodes('&', messagesFile.getString("prefix"));
 	}
 	
 	public List<String> getPlayerActivated()
@@ -267,7 +267,7 @@ public class DistanceCommand implements CommandExecutor, Listener {
 					{
 						if(configsFile.getString("kick.message") != null)
 						{
-							damager.kickPlayer(prefix + configsFile.getString("kick.message").replace("&", "§"));
+							damager.kickPlayer(prefix + ChatColor.translateAlternateColorCodes('&', configsFile.getString("kick.message")));
 						}
 						else
 						{
