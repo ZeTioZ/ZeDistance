@@ -1,7 +1,7 @@
 name: OpsyDistance
-version: 1.0
+version: 1.2.0
 author: ZeTioZ
-main: fr.opsycraft.opsydistance.Main
+main: fr.opsycraft.opsydistance.OpsyDistanceMain
 commands:
   pvpdistance:
     aliases: [pvpd, opsydistance, odistance, opsyd]

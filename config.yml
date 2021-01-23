@@ -1,0 +1,39 @@
+# Max distance in blocks for a legit hit
+max-distance: 5.00
+
+kick:
+  # Enable/Disable kick when the attacker is over the kick distance
+  enabled: true
+  # Kick distance in blocks to trigger it (need to be over the max-distance value)
+  distance: 5.8
+  # Player ping threshold to avoid player lag false positives (in ms)
+  ping-treshold: 80
+  # Server TPS threshold to avoid server lag false positives (in tps value up to 20)
+  tps-threshold: 18.0
+  # Kick message
+  message: "&cReach is not authorized on this server!"
+  
+command:
+  # Enable/Disable command when the attacker is over the kick distance
+  enabled: true
+  # Command distance in blocks to trigger it (need to be over the max-distance value)
+  distance: 5.2
+  # Player ping threshold to avoid player lag false positives (in ms)
+  ping-threshold: 80
+  # Server TPS threshold to avoid server lag false positives (in tps value up to 20)
+  tps-threshold: 18.0
+  # Commands to execute on trigger
+  execute:
+    - "broadcast {attacker} has attacked {victim} from {distance} blocks!"
+
+# Cancel the damage if the attack is over the maximum distance
+cancel-damage: true
+
+# Enable the pvp-distance checker on join
+on-join-enable: false
+
+# Disable the pvp-distance checker on leave
+on-leave-disable: false
+
+# Send an alert to a staff member with "pvpdistance.alert" permission while a player exceed the max hit distance
+staff-alert: true

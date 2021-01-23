@@ -4,11 +4,11 @@ hit-checker-enabled:
 hit-checker-disabled:
   - "&2You &cdisabled &2the hit distance checker!"
 plugin-help:
-  - "&2/opsyd &4» &dEnable/Disable OpsyDistance"
-  - "&2/opsyd on &4» &dEnable OpsyDistance"
-  - "&2/opsyd off &4» &dDisable OpsyDistance"
-  - "&2/opsyd help &4» &dShow the help page"
-  - "&2/opsyd reload &4» &dReload the plugin"
+  - "&2/opsyd &4Â» &dToggle OpsyDistance"
+  - "&2/opsyd on &4Â» &dEnable OpsyDistance"
+  - "&2/opsyd off &4Â» &dDisable OpsyDistance"
+  - "&2/opsyd help &4Â» &dShow the help page"
+  - "&2/opsyd reload &4Â» &dReload the plugin"
 plugin-reloaded:
   - "&2Plugin reloaded successfully!"
 
@@ -32,6 +32,9 @@ errors:
     - "&cYou already enabled the hit distance checker!"
   already-disabled:
     - "&cYou already disabled the hit distance checker!"
+  command-distance-under-max:
+    - "&cYou set the command distance under the max distance!"
+    - "&cPlease, change it to be more or equal to it!"
   kick-distance-under-max:
     - "&cYou set the kick distance under the max distance!"
     - "&cPlease, change it to be more or equal to it!"
