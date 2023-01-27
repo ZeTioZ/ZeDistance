@@ -1,0 +1,42 @@
+prefix: "&c[&aOpsyDistance&c] "
+hit-checker-enabled:
+  - "&2You &denabled &2the hit distance checker!"
+hit-checker-disabled:
+  - "&2You &cdisabled &2the hit distance checker!"
+plugin-help:
+  - "&2/opsyd &4» &dToggle OpsyDistance"
+  - "&2/opsyd on &4» &dEnable OpsyDistance"
+  - "&2/opsyd off &4» &dDisable OpsyDistance"
+  - "&2/opsyd help &4» &dShow the help page"
+  - "&2/opsyd reload &4» &dReload the plugin"
+plugin-reloaded:
+  - "&2Plugin reloaded successfully!"
+
+alert:
+  over-max:
+    - "&2The player \"&b{attacker}&2\" hurt you."
+    - "&2Distance of the attack &c» &4&l{distance} &cblocks."
+    - "&4Cheat &c&o(Probably)&4 ? Bug ? Lag ? &c» &2Contact a staff member!"
+  under-max:
+    - "&2The player \"&b{attacker}&2\" hurt you."
+    - "&2Distance of the attack &c» &a&l{distance} &eblocks."
+  staff-alert:
+    - "&2The player \"&b{attacker}&2\" hurt \"&b{victim}&2\"."
+    - "&2Distance of the attack &c» &4&l{distance} &cblocks."
+    - "&4Cheat &c&o(Probably)&4 ? Bug ? Lag ?"
+
+errors:
+  not-a-player:
+    - "&cYou must be a player to use this command!"
+  already-enabled:
+    - "&cYou already enabled the hit distance checker!"
+  already-disabled:
+    - "&cYou already disabled the hit distance checker!"
+  command-distance-under-max:
+    - "&cYou set the command distance under the max distance!"
+    - "&cPlease, change it to be more or equal to it!"
+  kick-distance-under-max:
+    - "&cYou set the kick distance under the max distance!"
+    - "&cPlease, change it to be more or equal to it!"
+  not-enough-permissions:
+    - "&cSorry, you don't have enough permissions to do that!"

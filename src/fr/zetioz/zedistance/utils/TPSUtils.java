@@ -1,6 +1,6 @@
-package fr.opsycraft.opsydistance.utils;
+package fr.zetioz.zedistance.utils;
 
-public class LagUtils implements Runnable
+public class TPSUtils implements Runnable
 {
 	public static int TICK_COUNT= 0;
 	public static long[] TICKS= new long[600];

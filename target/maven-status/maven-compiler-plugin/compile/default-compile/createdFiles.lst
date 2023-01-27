@@ -1,0 +1,5 @@
+fr\zetioz\zedistance\commands\ZeDistanceCommand.class
+fr\zetioz\zedistance\listeners\ZeDistanceDamageHandler.class
+fr\zetioz\zedistance\utils\TPSUtils.class
+fr\zetioz\zedistance\utils\PingUtils.class
+fr\zetioz\zedistance\ZeDistanceMain.class

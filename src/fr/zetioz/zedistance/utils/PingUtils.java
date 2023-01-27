@@ -1,4 +1,4 @@
-package fr.opsycraft.opsydistance.utils;
+package fr.zetioz.zedistance.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -24,7 +24,7 @@ public class PingUtils {
             }
             int ping = pingField.getInt(entityPlayer);
 
-            return ping > 0 ? ping : 0;
+            return Math.max(ping, 0);
         } catch (Exception e) {
             return 1;
         }
