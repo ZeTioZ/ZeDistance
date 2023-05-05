@@ -17,7 +17,7 @@
     <repositories>
         <repository>
             <id>zetioz</id>
-            <url>https://nexus.reyna.be/repository/maven-public/</url>
+            <url>https://nexus.donatog.tech/repository/maven-public/</url>
         </repository>
 
         <repository>
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.19.3-R0.1-SNAPSHOT</version>
+            <version>1.19.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
