@@ -28,20 +28,20 @@ public class ZeDistanceCommand implements TabExecutor, FilesManagerUtils.Reloada
 
 	private final List<UUID> playersActivated;
 
-	@Override
-	public void reloadFiles() throws FileNotFoundException
-	{
-		this.messages = this.instance.getFilesManger().getSimpleYaml("messages");
-		this.database = this.instance.getFilesManger().getSimpleYaml("database");
-		this.prefix = ColorUtils.color(messages.getString("prefix", "&8[&cZeDistance&8] &r"));
-	}
-	
 	public ZeDistanceCommand(ZeDistanceMain instance) throws FileNotFoundException
 	{
 		this.instance = instance;
 		this.instance.getFilesManger().addReloadable(this);
 		this.reloadFiles();
 		this.playersActivated = this.instance.getPlayersActivated();
+	}
+
+	@Override
+	public void reloadFiles() throws FileNotFoundException
+	{
+		this.messages = this.instance.getFilesManger().getSimpleYaml("messages");
+		this.database = this.instance.getFilesManger().getSimpleYaml("database");
+		this.prefix = ColorUtils.color(messages.getString("prefix", "&8[&cZeDistance&8] &r"));
 	}
 
 	@Override

@@ -39,7 +39,7 @@ public class ZeDistanceMain extends JavaPlugin implements Listener{
 
 		try
 		{
-			playersActivated = filesManager.getSimpleYaml("database").getStringList("playersActivated").stream().map(UUID::fromString).toList();
+			playersActivated.addAll(filesManager.getSimpleYaml("database").getStringList("playersActivated").stream().map(UUID::fromString).toList());
 			getCommand("pvpdistance").setExecutor(new ZeDistanceCommand(this));
 			registerEvents(this, new ZeDistanceDamageHandler(this));
 		}
