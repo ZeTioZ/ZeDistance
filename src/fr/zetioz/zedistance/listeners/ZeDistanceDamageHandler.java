@@ -90,7 +90,7 @@ public class ZeDistanceDamageHandler implements Listener, FilesManagerUtils.Relo
 					int ping = PingUtils.getPing(damager);
 					if(tps >= config.getDouble("command.tps-threshold", 19d) && ping <= config.getInt("command.ping-threshold", 100))
 					{
-						if(config.getStringList("command.execute").isEmpty())
+						if(!config.getStringList("command.execute").isEmpty())
 						{
 							for(String commandToExecute : config.getStringList("command.execute"))
 							{
